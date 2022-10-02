@@ -7,8 +7,19 @@
     --clr-neutral-100: hsl(232, 12%, 13%);
     --clr-neutral-900: hsl(0 0% 0%);
 
-    --font-family-primary: ;
+    --ff-primary: 'Be Vietnam Pro', sans-serif;
 
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-primary);
+
+    --fw-regular: 300;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+
+    --fs-300: ;
+    --fs-400: .875rem;
+    --fs-500: ;
+    --fs-600: ;
 }
 
 /* https://piccalil.li/blog/a-modern-css-reset */
