@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
   </head>
   <body>
      <header class="primary-header">
@@ -60,7 +61,7 @@
         <section class="padding-block-900">
             <div class="container">
                 <div class="even-columns">
-                    <div>
+                    <div class="flow text-center-sm-only margin-bottom-700" style="--flow-spacer: 1.5rem">
                         <h2 class="fs-secondary-heading fw-bold">What's different about Manage?</h2>
                         <p>Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
                     </div>
@@ -68,20 +69,19 @@
                         <ul class="numbered-items | flow" role="list">
                             <li>
                                 <div class="flow" style="--flow-spacer: 1em">
-                                <h3 class="fs-600 fw-bold">Track company-wide progress</h3>
-                                <p data-width="wide">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way down to the smallest of details. Never lose sight of the bigger picture again.</p>
+                                <h3 class="numbered-items__title | fs-600 fw-bold">Track company-wide progress</h3>
+                                <p class="numbered-items__body" data-width="wide">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way down to the smallest of details. Never lose sight of the bigger picture again.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="flow" style="--flow-spacer: 1em">
-                                <h3 class="fs-600 fw-bold">Advanced built-in reports</h3><p>
-                                    Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+                                <h3 class="numbered-items__title | fs-600 fw-bold">Advanced built-in reports</h3><p class="numbered-items__body">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="flow" style="--flow-spacer: 1em">
-                                <h3 class="fs-600 fw-bold">Everything you need in one place</h3>
-                                <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivitgy solution.</p>
+                                <h3 class="numbered-items__title | fs-600 fw-bold">Everything you need in one place</h3>
+                                <p class="numbered-items__body">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivitgy solution.</p>
                                 </div>
                             </li>
                         </ul>
@@ -90,9 +90,39 @@
             </div>
         </section>
 
-        <section class="carousel | padding-block-700">
+        <section class="carousel | padding-block-700 text-center">
             <h2 class="fs-secondary-heading fw-bold">What they've said</h2>
             <!-- Carousel here -->
+            <ul class="slider">
+                <li>
+                    <img src="images/avatar-ali.png" alt="">
+                    <div class="slider-content | flow" style="--flow-spacer: 1rem">
+                        <h3 class="fw-bold">Ali Bravo</h3>
+                        <p data-width="wide">"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.""</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/avatar-richard.png" alt="">
+                    <div class="slider-content | flow" style="--flow-spacer: 1rem">
+                        <h3 class="fw-bold">Richard Watts</h3>
+                        <p data-width="wide">"Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone I talk to!"</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/avatar-shanai.png" alt="">
+                    <div class="slider-content | flow" style="--flow-spacer: 1rem">
+                        <h3 class="fw-bold">Shanai Gough</h3>
+                        <p data-width="wide">"Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive."</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/avatar-anisha.png" alt="">
+                    <div class="slider-content | flow" style="--flow-spacer: 1rem">
+                        <h3 class="fw-bold">Anisha Lee</h3>
+                        <p data-width="wide">"Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."</p>
+                    </div>
+                </li>
+            </ul>
             <button class="button">Get Started</button>
         </section>
 
@@ -171,6 +201,7 @@
          </div>
      </footer>
     <div id="app"></div>
+    <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
